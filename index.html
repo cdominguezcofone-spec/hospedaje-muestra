@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio del Valle | Hospedaje de Descanso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Desconecta en la Naturaleza</h1>
+            <p>Un rincón de paz escondido en el pueblo, lejos del ruido de la ciudad.</p>
+            <a href="#reserva" class="btn-primary">Simular Reserva</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>El encanto de lo simple</h2>
+        <p class="subtitle">Nuestras instalaciones están pensadas para una desconexión total y un descanso profundo.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-mountain-sun"></i>
+                <h3>Paisajes Únicos</h3>
+                <p>Despierta rodeado de montañas, aire puro y el cantar de las aves locales.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h3>Desayuno Casero</h3>
+                <p>Productos orgánicos de la zona preparados cada mañana con amor.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-bed"></i>
+                <h3>Máximo Confort</h3>
+                <p>Camas premium y texturas naturales para garantizar tu descanso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserva" class="booking-section">
+        <div class="booking-container">
+            <h3>Planifica tu Estancia</h3>
+            <p>Completa el formulario de muestra para ver el sistema en acción.</p>
+            
+            <form id="formReserva">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Fecha de Entrada</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Fecha de Salida</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="btnEnviar" class="btn-submit">Confirmar Pre-Reserva</button>
+            </form>
+
+            <div id="mensajeExito" class="alert success hidden">
+                <i class="fa-solid fa-circle-check"></i> ¡Reserva registrada en Google Sheets con éxito!
+            </div>
+            <div id="mensajeError" class="alert error hidden">
+                <i class="fa-solid fa-circle-xmark"></i> Hubo un error. Inténtalo de nuevo.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Refugio del Valle. Prototipo de muestra para compradores.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
